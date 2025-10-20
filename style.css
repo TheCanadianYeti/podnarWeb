@@ -19,6 +19,22 @@ body {
     justify-content: space-between; /* logo left, nav right */
     align-items: center;            /* vertically center logo and nav */
 }
+.title-box {
+    width: 700px;
+    font-size: 30px;
+}
+.body-text{
+    margin-top: 250px;
+    padding-left: 100px;
+    color: #eef0f2;
+}
+
+.text-box {
+  width: 600px;       /* sets the box width */
+  padding: 20px; 
+  font-size: 20px;
+  }
+
 .github img {
     height: 20px;
 }
