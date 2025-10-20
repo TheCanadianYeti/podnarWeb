@@ -1,0 +1,59 @@
+/* Body background */
+body {
+    background-color: #1b1f3b;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: black;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Container: flex for logo left / nav right */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* logo left, nav right */
+    align-items: center;            /* vertically center logo and nav */
+}
+.github img {
+    height: 20px;
+}
+/* Logo */
+.logo img {
+    height: 70px; /* adjust size as needed */
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    gap: 30px; /* space between links */
+}
+
+/* Links default style */
+.nav a {
+    color: #eef0f2;
+    text-decoration: none;
+    font-size: 18px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent; /* underline using border */
+    transition: 0.2s;
+}
+
+/* Current page underline */
+.nav a.current {
+    border-bottom-color: blue;
+}
+
+/* Hover underline */
+.nav a:hover {
+    border-bottom-color: blue;
+}
+
+/* Remove current underline while hovering another link */
+.nav:has(a:hover) a.current:not(:hover) {
+    border-bottom-color: transparent;
+}
