@@ -1,10 +1,4 @@
 # podnarWeb
-podnarWeb is the root website and main development hub for podnar.ca
-Certainly! Based on the information available from your GitHub repository, here's a professional README tailored for the **podnarWeb** project:
-
----
-
-# podnarWeb
 
 **podnarWeb** is the root website and main development hub for [podnar.ca](https://podnar.ca), showcasing the personal and professional endeavors of TheCanadianYeti.
 
