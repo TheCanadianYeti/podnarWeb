@@ -16,17 +16,45 @@
 
             <!-- Navigation -->
             <nav class="nav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="#" class="current">Skills</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact Me</a>
-                <div class="github">
-                    <a href="https://github.com/TheCanadianYeti" target="blank"><img src="images/github.png" alt="Github"></a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="#" class="current">Skills</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact Me</a>
+                    <div class="github">
+                        <a href="https://github.com/TheCanadianYeti" target="_blank">
+                            <img src="images/github.png" alt="Github">
+                        </a>
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
-    <h1 align="center" style="color: white;">Currently in Progress, Please Come Back Later!...</h1>
+
+
+    <main>
+        <div class="contact"></div>
+        <h1 align="center" style="color: white; margin-top: 120px;">
+            Currently in Progress, Please Come Back Later!...
+        </h1>
+    </main>
+
+    <!-- JavaScript for menu toggle -->
+    <script>
+        const menu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        menu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menu.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

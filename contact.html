@@ -6,29 +6,60 @@
 <title>Marcus Podnar</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="contact-page">
+    <!-- HEADER -->
     <header class="header">
         <div class="header-container">
-            <!-- Logo -->
             <div class="logo">
                 <img src="images/logo.png" alt="Logo" />
             </div>
 
-            <!-- Navigation -->
             <nav class="nav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="skills.html">Skills</a>
-                <a href="projects.html">Projects</a>
-                <a href="#" class="current">Contact Me</a>
-                <div class="github">
-                    <a href="https://github.com/TheCanadianYeti" target="blank"><img src="images/github.png" alt="Github"></a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="#" class="current">Contact Me</a>
+                    <div class="github">
+                        <a href="https://github.com/TheCanadianYeti" target="_blank">
+                            <img src="images/github.png" alt="Github">
+                        </a>
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
 
+    <!-- MAIN CONTACT SECTION -->
+    <main>
+    <div class="contact-container">
+        <div class="contact-parallelogram"></div>
+        <div class="contact-info">
+            <h1>Contact Me</h1>
+            <p>Email: <a href="mailto:podnar.dev@gmail.com" target="blank" style="color: white;">podnar.dev@gmail.com</a></p>
+            <p>Linkedin: <a href="https://www.linkedin.com/in/marcus-podnar-582187260/" style="color: white;">Marcus Podnar</a></p>
+            <p>Github: <a href="https://github.com/TheCanadianYeti/podnarWeb" style="color: white;">TheCanadianYeti</a></p>
+        </div>
+    </div>
+    </main>
 
-    <h1 align="center" style="color: white;">Currently in Progress, Please Come Back Later!...</h1>
+
+    <!-- JavaScript for menu toggle -->
+    <script>
+        const menu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        menu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menu.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

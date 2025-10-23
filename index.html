@@ -16,63 +16,79 @@
 
             <!-- Navigation -->
             <nav class="nav">
-                <a href="#" class="current">Home</a>
-                <a href="about.html">About</a>
-                <a href="skills.html">Skills</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact Me</a>
-                <div class="github">
-                    <a href="https://github.com/TheCanadianYeti" target="blank"><img src="images/github.png" alt="Github"></a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="nav-links">
+                    <a href="#" class="current">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact Me</a>
+                    <div class="github">
+                        <a href="https://github.com/TheCanadianYeti" target="_blank">
+                            <img src="images/github.png" alt="Github">
+                        </a>
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
 
     <div class="about-container">
-    
+        <div class="body-text">
+            <!-- title section -->
+            <div class="title-box">
+                <h1 class="typewriter" id="typewriter">&lt;h1&gt;Hello, My Name is Marcus Podnar.&lt;/h1&gt;</h1>
+            </div>
 
-    <div class="body-text">
-        <!-- title section -->
-        <div class="title-box">
-            <h1 class="typewriter" id="typewriter">&lt;h1&gt;Hello, My Name is Marcus Podnar.&lt;/h1&gt;</h1>
+            <!-- about me section-->
+            <div class="text-box">
+                <p>I'm a student at <b>Sheridan College,
+                currently studying Software
+                Development and Network
+                Engineering (SDNE)</b>. Technology has
+                always been more than just a field of
+                study for me - it's a passion. I love
+                diving into code, breaking things just to
+                learn how they work, and building
+                solutions that bring ideas to life. I'm
+                endlessly curious about how systems
+                function beneath the surface and enjoy
+                experimenting, improving, and creating
+                meaningful projects that challenge me to
+                grow as a developer.</p>
+            </div>
         </div>
 
-        <!-- about me section-->
-        <div class="text-box">
-            <p>I'm a student at <b>Sheridan College,
-            currently studying Software
-            Development and Network
-            Engineering (SDNE)</b>. Technology has
-            always been more than just a field of
-            study for me - it's a passion. I love
-            diving into code, breaking things just to
-            learn how they work, and building
-            solutions that bring ideas to life. I'm
-            endlessly curious about how systems
-            function beneath the surface and enjoy
-            experimenting, improving, and creating
-            meaningful projects that challenge me to
-            grow as a developer.</p>
-        </div>
-
-    </div>
-
-<!-- Fake browser window -->
-    <div class="browser-window">
-        <div class="browser-bar">
-            <span class="circle red"></span>
-            <span class="circle yellow"></span>
-            <span class="circle green"></span>
-        </div>
-        <div class="browser-content">
-            <img src="images/me.jpg" alt="Image of Marcus Podnar">
+        <!-- Fake browser window -->
+        <div class="browser-window">
+            <div class="browser-bar">
+                <span class="circle red"></span>
+                <span class="circle yellow"></span>
+                <span class="circle green"></span>
+            </div>
+            <div class="browser-content">
+                <img src="images/me.jpg" alt="Image of Marcus Podnar">
+            </div>
         </div>
     </div>
-
-    </div> <!-- end of body-text -->
 
     <!-- Include the typewriter JS -->
     <script src="typewriter.js"></script>
+
+    <!-- Mobile menu toggle script -->
+    <script>
+        const menu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        menu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menu.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>
-
