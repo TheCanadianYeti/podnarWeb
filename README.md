@@ -1,6 +1,6 @@
 # podnarWeb
 
-**podnarWeb** is the root website and main development hub for [marcus.podnar.ca](https://marcus.podnar.ca), showcasing the personal and professional endeavors of TheCanadianYeti.
+**podnarWeb** is the website and main development hub for [marcus.podnar.ca](https://marcus.podnar.ca), showcasing the personal and professional endeavors of TheCanadianYeti.
 
 ## 🚀 Project Overview
 
